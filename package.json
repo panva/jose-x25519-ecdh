@@ -1,0 +1,69 @@
+{
+  "name": "jose-x25519-ecdh",
+  "version": "1.0.0",
+  "description": "ECDH-ES implementation for X25519 keys extension for the jose module",
+  "keywords": [
+    "OKP",
+    "curve25519",
+    "ecdh",
+    "ecdh-es",
+    "ecdh-es+a128kw",
+    "ecdh-es+a192kw",
+    "ecdh-es+a256kw",
+    "jose",
+    "jwe",
+    "x25519"
+  ],
+  "homepage": "https://github.com/panva/jose-x25519-ecdh",
+  "repository": "panva/jose-x25519-ecdh",
+  "license": "MIT",
+  "author": "Filip Skokan <panva.ip@gmail.com>",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "coverage": "c8 ava",
+    "lint": "standard",
+    "lint-fix": "standard --fix",
+    "test": "ava",
+    "watch": "ava --watch"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "dependencies": {
+    "libsodium-wrappers": "^0.7.6"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "ava": "^2.4.0",
+    "c8": "^6.0.1",
+    "husky": "^3.0.9",
+    "jose": "^1.16.0",
+    "jose-chacha": "^1.0.0",
+    "standard": "^14.3.1"
+  },
+  "peerDependencies": {
+    "jose": "^1.16.0"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "ava": {
+    "babel": false,
+    "compileEnhancements": false,
+    "files": [
+      "test/**/*.test.js"
+    ]
+  },
+  "funding": "https://github.com/sponsors/panva"
+}
