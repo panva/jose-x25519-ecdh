@@ -1,6 +1,6 @@
 {
   "name": "jose-x25519-ecdh",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ECDH-ES implementation for X25519 keys extension for the jose module",
   "keywords": [
     "OKP",
