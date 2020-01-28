@@ -12,6 +12,7 @@ test.before(async t => {
 })
 
 test('all OKP X25519 key JWE functionality', t => {
+  t.plan(18)
   const key = jose.JWK.generateSync('OKP', 'X25519', { use: 'enc' })
   const key2 = jose.JWK.generateSync('OKP', 'X25519', { use: 'enc' })
 
