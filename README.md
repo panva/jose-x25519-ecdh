@@ -1,3 +1,9 @@
+# Deprecated!
+
+As of Feb 18th 2020, the release of `jose@^1.23.0` supports ECDH-ES for both X25519 and X448 on
+Node.js runtime with improved diffie-hellman support. This module is no longer needed, is deprecated
+and repository archived.
+
 # jose-x25519-ecdh
 
 This is a plugin for the [`jose`][jose] package that implements Key Agreement with Elliptic Curve
